@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config>
+	<services>
+		<service>
+			<windowsServiceName>Tomcat7I1</windowsServiceName>
+			<tomcatServerName>localhost</tomcatServerName>
+			<tomcatServerJMXPort>9999</tomcatServerJMXPort>
+			<tomcatServiceName>services</tomcatServiceName>
+		</service>
+		<service>
+			<windowsServiceName>Tomcat7I2</windowsServiceName>
+			<tomcatServerName>localhost</tomcatServerName>
+			<tomcatServerJMXPort>9998</tomcatServerJMXPort>
+			<tomcatServiceName>services</tomcatServiceName>
+		</service>
+		<service>
+			<windowsServiceName>Tomcat7I3</windowsServiceName>
+			<tomcatServerName>localhost</tomcatServerName>
+			<tomcatServerJMXPort>9997</tomcatServerJMXPort>
+			<tomcatServiceName>services</tomcatServiceName>
+		</service>
+	</services>
+</config>
