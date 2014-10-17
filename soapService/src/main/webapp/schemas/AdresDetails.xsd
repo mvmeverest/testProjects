@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://webservices.com" targetNamespace="http://webservices.com" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Adres" type="Adres"/>
+	<xs:complexType name="Adres">
+		<xs:sequence>
+			<xs:element name="AdresValid" type="xs:boolean"/>
+			<xs:element name="PostcodeValid" type="xs:boolean" minOccurs="0"/>
+			<xs:element name="ErrorMessage" type="xs:string" minOccurs="0"/>
+			<xs:element name="Adres" type="xs:string" minOccurs="0"/>
+			<xs:element name="AdresNumber" type="xs:string" minOccurs="0"/>
+			<xs:element name="Postcode" type="xs:string" minOccurs="0"/>
+			<xs:element name="Plaats" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

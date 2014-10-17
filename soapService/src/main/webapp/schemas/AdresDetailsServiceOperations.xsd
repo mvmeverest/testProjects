@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://com/webservices/adresService" xmlns:adres="http://webservices.com" targetNamespace="http://com/webservices/adresService" elementFormDefault="qualified">
+	<xsd:import namespace="http://webservices.com" schemaLocation="AdresDetails.xsd"/>
+	<xsd:element name="AdresRequest">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="adres" type="xsd:string"/>
+				<xsd:element name="postcode" type="xsd:string" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="AdresResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Adres" type="adres:Adres"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

@@ -1,0 +1,1 @@
+var monitorApp = angular.module('monitorApp', ['ngResource']);
